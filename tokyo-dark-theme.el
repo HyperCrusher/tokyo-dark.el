@@ -38,7 +38,7 @@
       (bg5 "#282C34"))
 
  (custom-theme-set-faces 'tokyo-dark
-  `(default ((t (:background ,bg :foreground ,fg))))
+  `(default ((t (:background ,bg0 :foreground ,fg))))
   `(italic ((t (:slant italic))))
   `(bold ((t (:weight bold))))
   `(bold-italic ((t (:weight bold :slant italic))))
@@ -46,13 +46,13 @@
   `(highlight ((t (:background ,bg5 :overline nil))))
   `(region ((t (:background ,bg5))))
   `(fringe ((t (:background ,bg0))))
-  `(button ((t (:inherit default :foreground ,bg :background 'blue))))
+  `(button ((t (:inherit default :foreground ,bg0 :background 'blue))))
   `(escape-glyph ((t (:foreground ,red))))
 
   `(link ((t (:underline (:color ,blue :style line) :foreground ,blue))))
   `(link-visited ((t (:inherit link :foreground ,blue :underline (:color ,blue :style line)))))
 
-  `(cursor ((t (:background ,cursor :foreground ,bg))))
+  `(cursor ((t (:background ,cursor :foreground ,bg0))))
 
   ))
 
