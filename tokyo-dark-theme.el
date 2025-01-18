@@ -166,6 +166,32 @@
 
                           ;;Vertico
                           `(vertico-current ((t (:foreground ,fg :background ,bg2))))
+
+                          ;; Treesitter
+                          `(tree-sitter-hl-face:attribute ((t (:inherit font-lock-constant-face))))
+                          `(tree-sitter-hl-face:property ((t (:foreground ,purple))))
+                          `(tree-sitter-hl-face:property.definition ((t (:foreground ,purple))))
+                          `(tree-sitter-hl-face:comment ((t (:inherit font-lock-comment-face))))
+                          `(tree-sitter-hl-face:constant ((t (:inherit font-lock-constant-face))))
+                          `(tree-sitter-hl-face:constant.builtin ((t (:inherit font-lock-builtin-face))))
+                          `(tree-sitter-hl-face:constructor ((t (:inherit font-lock-constant-face))))
+                          `(tree-sitter-hl-face:function ((t (:inherit font-lock-function-name-face))))
+                          `(tree-sitter-hl-face:function.builtin ((t (:inherit font-lock-builtin-face))))
+                          `(tree-sitter-hl-face:function.call ((t (:inherit font-lock-function-name-face :weight normal))))
+                          `(tree-sitter-hl-face:function.macro ((t (:inherit font-lock-preprocessor-face))))
+                          `(tree-sitter-hl-face:function.special ((t (:inherit font-lock-preprocessor-face))))
+                          `(tree-sitter-hl-face:keyword ((t (:inherit font-lock-keyword-face))))
+                          `(tree-sitter-hl-face:escape ((t (:foreground ,orange))))
+                          `(tree-sitter-hl-face:punctuation.bracket ((t (:foreground ,bg4))))
+                          `(tree-sitter-hl-face:punctuation.delimiter ((t (:foreground ,bg4))))
+                          `(tree-sitter-hl-face:string ((t (:inherit font-lock-string-face))))
+                          `(tree-sitter-hl-face:string.special ((t (:foreground ,light-blue))))
+                          `(tree-sitter-hl-face:tag ((t (:foreground ,red))))
+                          `(tree-sitter-hl-face:type ((t (:inherit font-lock-type-face))))
+                          `(tree-sitter-hl-face:type.parameter ((t (:foreground ,light-blue))))
+                          `(tree-sitter-hl-face:variable ((t (:inherit font-lock-variable-name-face))))
+                          `(tree-sitter-hl-face:variable.parameter ((t (:foreground ,red))))
+                          `(tree-sitter-hl-face:operator ((t (:foreground ,light-blue))))
                           ))
 
 ;;;###autoload
@@ -174,5 +200,12 @@
   (add-to-list 'custom-theme-load-path
                (file-name-as-directory
                 (file-name-directory load-file-name))))
+
+  ;; Sets executable files to be green in dired/dirvish
+  (add-to-list
+   'dired-font-lock-keywords
+   (list dired-re-exe
+         '(".+" (dired-move-to-filename) nil (0 'dired-perm-write)))
+   'append)
 
 (provide-theme 'tokyo-dark)
