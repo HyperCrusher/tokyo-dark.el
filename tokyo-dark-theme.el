@@ -10,13 +10,17 @@
   :group 'tokyo-dark
   :type 'boolean)
 
+(defcustom tokyo-dark-transparency 97
+  "If 'tokyo-dark-transparent-background' is non nil then this number (1-100) is how opaque the window is (may require restart)"
+  :group 'tokyo-dark
+  :type 'integer)
+
 (defcustom tokyo-dark-brighter-comments nil
-  "If non-nil, comments will be highlighted in more vivid colors."
+  "If non-nil, comments will be highlighted in a more vivid color."
   :group 'tokyo-dark
   :type 'boolean)
 
-
-(defcustom tokyo-dark-italic-comments nil
+(defcustom tokyo-dark-italic-comments t
   "If non-nil, comments will be italic"
   :group 'tokyo-dark
   :type 'boolean)
