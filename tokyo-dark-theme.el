@@ -194,6 +194,16 @@
                           `(tree-sitter-hl-face:variable ((t (:inherit font-lock-variable-name-face))))
                           `(tree-sitter-hl-face:variable.parameter ((t (:foreground ,red))))
                           `(tree-sitter-hl-face:operator ((t (:foreground ,light-blue))))
+
+                          ; Rainbow delimiters
+                          `(rainbow-delimiters-depth-1-face ((t (:foreground ,blue))))
+                          `(rainbow-delimiters-depth-2-face ((t (:foreground ,red))))
+                          `(rainbow-delimiters-depth-3-face ((t (:foreground ,orange))))
+                          `(rainbow-delimiters-depth-4-face ((t (:foreground ,light-blue))))
+                          `(rainbow-delimiters-depth-5-face ((t (:foreground ,green))))
+                          `(rainbow-delimiters-depth-6-face ((t (:foreground ,purple))))
+                          `(rainbow-delimiters-depth-7-face ((t (:foreground ,gray))))
+                          `(rainbow-delimiters-depth-8-face ((t (:foreground ,fg))))
                           ))
 
 ;;;###autoload
