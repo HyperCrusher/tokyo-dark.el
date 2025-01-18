@@ -122,6 +122,18 @@
                           `(font-lock-variable-use-face ((t (:foreground ,orange))))
                           `(font-lock-warning-face ((t (:inherit warning))))
 
+                          ;; Dired
+                          `(dired-flagged ((t (:foreground ,red :weight bold))))
+                          `(dired-marked ((t (:weight bold :slant italic :foreground ,purple))))
+                          `(dired-mark ((t (:inherit dired-marked))))
+                          `(dired-header ((t (:foreground ,light-blue :weight bold))))
+                          `(dired-ignored ((t (:inherit font-lock-comment-face))))
+                          `(dired-special ((t (:foreground ,orange))))
+                          `(dired-symlink ((t (:foreground ,red))))
+                          `(dired-warning ((t (:inherit warning))))
+                          `(dired-directory ((t (:foreground ,blue))))
+                          `(dired-perm-write ((t (:foreground ,green))))
+                          `(dired-broken-symlink ((t (:foreground ,fg :background ,red))))
                            ;; ansi-color (emacs >= 28.1)
                           `(ansi-color-black ((t (:foreground ,black))))
                           `(ansi-color-red ((t (:foreground ,red))))
