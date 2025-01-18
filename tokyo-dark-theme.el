@@ -138,6 +138,10 @@
                           ;; Colorful
                           `(colorful-base ((t (:box nil))))
 
+                          ;;evil-quickscope
+                          `(evil-quickscope-first-face ((t (:foreground ,orange :background ,bg3))))
+                          `(evil-quickscope-second-face ((t (:foreground ,orange :background ,bg3))))
+
                            ;; ansi-color (emacs >= 28.1)
                           `(ansi-color-black ((t (:foreground ,black))))
                           `(ansi-color-red ((t (:foreground ,red))))
