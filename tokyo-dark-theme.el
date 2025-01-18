@@ -86,7 +86,14 @@
                           `(window-divider ((t (:foreground ,bg0))))
                           `(vertical-border ((t (:foreground ,bg0))))
 
+                          ;; solaire-mode
+                          `(solaire-default-face ((t (:background ,bg0 :foreground ,fg))))
+                          `(solaire-line-number-face ((t (:background ,bg0 :foreground ,fg))))
+                          `(solaire-fringe-face ((t (:background ,bg0 :foreground ,fg))))
 
+                          ;; evil
+                          `(evil-search-highlight-persist-highlight-face ((t (:inherit lazy-highlight))))
+                          `(evil-ex-lazy-highlight ((t (:inherit lazy-highlight))))
 
                           ;; Fontlock / Syntax
                           `(font-lock-bracket-face ((t (:foreground ,gray))))
