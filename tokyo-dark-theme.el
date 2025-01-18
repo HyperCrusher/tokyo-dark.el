@@ -20,7 +20,7 @@
   :group 'tokyo-dark
   :type 'boolean)
 
-(defcustom tokyo-dark-italic-comments t
+(defcustom tokyo-dark-italic-comments nil
   "If non-nil, comments will be italic"
   :group 'tokyo-dark
   :type 'boolean)
