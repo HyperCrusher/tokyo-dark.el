@@ -25,8 +25,9 @@
   :group 'tokyo-dark
   :type 'boolean)
 
-(set-frame-parameter nil 'alpha-background tokyo-dark-transparency)
-(add-to-list 'default-frame-alist '(alpha-background . tokyo-dark-transparency))
+(when tokyo-dark-transparent-background
+  (set-frame-parameter nil 'alpha-background tokyo-dark-transparency)
+  (add-to-list 'default-frame-alist '(alpha-background . tokyo-dark-transparency)))
 
 (let ((red "#EE6D85")
       (green "#95C561")
