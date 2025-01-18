@@ -134,6 +134,10 @@
                           `(dired-directory ((t (:foreground ,blue))))
                           `(dired-perm-write ((t (:foreground ,green))))
                           `(dired-broken-symlink ((t (:foreground ,fg :background ,red))))
+
+                          ;; Colorful
+                          `(colorful-base ((t (:box nil))))
+
                            ;; ansi-color (emacs >= 28.1)
                           `(ansi-color-black ((t (:foreground ,black))))
                           `(ansi-color-red ((t (:foreground ,red))))
