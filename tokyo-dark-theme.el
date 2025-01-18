@@ -133,6 +133,12 @@
                           `(ansi-color-bright-cyan ((t (:foreground ,light-blue))))
                           `(ansi-color-bright-white ((t (:foreground ,gray))))
 
+                          ;; Completions
+                          `(completions-common-part ((t (:foreground ,fg :weight bold))))
+                          `(completions-first-difference ((t (:foreground ,fg))))
+
+                          ;;Vertico
+                          `(vertico-current ((t (:foreground ,fg :background ,bg2))))
                           ))
 
 ;;;###autoload
