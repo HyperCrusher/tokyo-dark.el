@@ -63,6 +63,7 @@
                           `(header-line ((t (:inherit mode-line))))
                           `(help-key-binding ((t (:background ,bg3 :foreground ,light-blue :box (:line-width (-1 . -1)))) :color ,bg4 :style nil))
                           `(highlight ((t (:foreground ,fg :background ,bg3))))
+                          `(show-paren-match ((t (:inherit highlight))))
                           `(hl-line ((t (:background ,bg2))))
                           `(info-menu-star ((t (:foreground ,red))))
                           `(info-quoted-name ((t (:foreground ,orange))))
