@@ -218,6 +218,41 @@
                           `(git-gutter:added ((t (:foreground ,green))))
                           `(git-gutter:deleted ((t (:foreground ,red))))
 
+                          ; Diff
+                          `(diff-header ((t (:foreground ,blue))))
+                          `(diff-hunk-header ((t (:foreground ,fg :background ,bg2))))
+                          `(diff-added ((t (:background ,bg2 :foreground ,green))))
+                          `(diff-removed ((t (:background ,bg2 :foreground ,red))))
+                          `(diff-indicator-added ((t (:foreground ,green))))
+                          `(diff-indicator-removed ((t (:foreground ,red))))
+                          `(diff-refine-added ((t (:background ,bg3 :foreground ,green))))
+                          `(diff-refine-removed ((t (:background ,bg3 :foreground ,red))))
+                          `(diff-refine-changed ((t (:background ,orange :foreground ,bg0))))
+
+                          ; Magit
+                          `(magit-branch-local ((t (:foreground ,light-blue))))
+                          `(magit-branch-remote ((t (:foreground ,green))))
+                          `(magit-tag ((t (:foreground ,orange))))
+                          `(magit-section-heading ((t (:foreground ,blue :weight bold))))
+                          `(magit-section-highlight ((t (:background ,bg1 :extend t))))
+                          `(magit-diff-context-highlight ((t (:background ,bg1 :foreground ,fg :extend t))))
+                          `(magit-diff-revision-summary ((t (:foreground ,blue :weight bold))))
+                          `(magit-diff-revision-summary-highlight ((t (:foreground ,blue :weight bold))))
+                          `(magit-diff-added ((t (:foreground ,green :extend t))))
+                          `(magit-diff-added-highlight ((t (:background ,bg2 :foreground ,green :extend t))))
+                          `(magit-diff-removed ((t (:foreground ,red :extend t))))
+                          `(magit-diff-removed-highlight ((t (:background ,bg2 :foreground ,red :extend t))))
+                          `(magit-diff-file-heading ((t (:foreground ,fg))))
+                          `(magit-diff-file-heading-highlight ((t (:inherit magit-section-highlight))))
+                          `(magit-diffstat-added ((t (:foreground ,green))))
+                          `(magit-diffstat-removed ((t (:foreground ,red))))
+                          `(magit-hash ((t (:foreground ,gray))))
+                          `(magit-diff-hunk-heading ((t (:inherit diff-hunk-header))))
+                          `(magit-diff-hunk-heading-highlight ((t (:inherit diff-hunk-header :weight bold))))
+                          `(magit-log-author ((t (:foreground ,gray))))
+                          `(magit-process-ng ((t (:foreground ,orange :weight bold))))
+                          `(magit-process-ok ((t (:foreground ,green :weight bold))))
+
                           ))
 
 ;;;###autoload
