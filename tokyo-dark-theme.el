@@ -206,6 +206,13 @@
                           `(rainbow-delimiters-depth-6-face ((t (:foreground ,purple))))
                           `(rainbow-delimiters-depth-7-face ((t (:foreground ,gray))))
                           `(rainbow-delimiters-depth-8-face ((t (:foreground ,fg))))
+
+                          ; Corfu
+                          `(corfu-bar ((t (:background ,purple))))
+                          `(corfu-default ((t (:background ,bg0 :foreground ,fg))))
+                          `(corfu-border ((t (:background ,fg-mute))))
+                          `(corfu-current ((t (:background ,bg3))))
+
                           ))
 
 ;;;###autoload
