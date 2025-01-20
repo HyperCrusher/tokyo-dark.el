@@ -87,6 +87,7 @@
                           `(trailing-whitespace ((t (:inherit warning))))
                           `(window-divider ((t (:foreground ,bg0))))
                           `(vertical-border ((t (:foreground ,bg0))))
+                          `(isearch-fail ((t (:foreground ,bg0 :background ,red))))
 
                           ;; solaire-mode
                           `(solaire-default-face ((t (:background ,bg0 :foreground ,fg))))
@@ -96,6 +97,7 @@
                           ;; evil
                           `(evil-search-highlight-persist-highlight-face ((t (:inherit lazy-highlight))))
                           `(evil-ex-lazy-highlight ((t (:inherit lazy-highlight))))
+                          `(evil-ex-info ((t (:foreground ,red))))
 
                           ;; Fontlock / Syntax
                           `(font-lock-bracket-face ((t (:foreground ,gray))))
