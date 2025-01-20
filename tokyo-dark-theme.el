@@ -213,6 +213,11 @@
                           `(corfu-border ((t (:background ,fg-mute))))
                           `(corfu-current ((t (:background ,bg3))))
 
+                          ; Git-Gutter
+                          `(git-gutter:modified ((t (:foreground ,purple))))
+                          `(git-gutter:added ((t (:foreground ,green))))
+                          `(git-gutter:deleted ((t (:foreground ,red))))
+
                           ))
 
 ;;;###autoload
