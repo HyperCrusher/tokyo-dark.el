@@ -253,6 +253,26 @@
                           `(magit-process-ng ((t (:foreground ,orange :weight bold))))
                           `(magit-process-ok ((t (:foreground ,green :weight bold))))
 
+                          `(org-level-1 ((t (:height 1.7 :foreground ,red))))
+                          `(org-level-2 ((t (:height 1.5 :foreground ,blue))))
+                          `(org-level-3 ((t (:height 1.3 :foreground ,orange))))
+                          `(org-level-4 ((t (:height 1.2 :foreground ,green))))
+                          `(org-level-5 ((t (:height 1.0 :foreground ,purple))))
+
+                          `(org-ellipsis ((t (:height 0.5 :underline nil))))
+                          `(org-footnote ((t (:foreground ,purple))))
+
+                          `(org-modern-progress-incomplete ((t (:background ,bg0 :height 1.3))))
+                          `(org-modern-progress-complete ((t (:background ,search :height 1.3))))
+                          `(org-modern-tag ((t (:background ,blue :foreground ,bg0))))
+                          `(org-modern-todo ((t (:background ,orange :foreground ,bg0))))
+                          `(org-modern-done ((t (:background ,purple :foreground ,bg0))))
+                          `(org-modern-priority ((t (:background ,green :foreground ,bg0 :height 1.2))))
+                          `(org-modern-date-active ((t (:background ,bg0 :foreground ,fg))))
+                          `(org-modern-time-active ((t (:background ,fg :foreground ,bg0))))
+                          `(org-modern-date-inactive ((t (:background ,bg0 :foreground ,fg))))
+                          `(org-modern-time-inactive ((t (:background ,fg :foreground ,bg0))))
+                          `(org-modern-horizontal-rule ((t (:strike-through ,purple))))
                           ))
 
 ;;;###autoload
