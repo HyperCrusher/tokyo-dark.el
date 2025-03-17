@@ -273,6 +273,26 @@
                           `(org-modern-date-inactive ((t (:background ,bg0 :foreground ,fg))))
                           `(org-modern-time-inactive ((t (:background ,fg :foreground ,bg0))))
                           `(org-modern-horizontal-rule ((t (:strike-through ,purple))))
+
+                          ; My Modeline faces
+                          `(ml-git-face ((t (:background ,purple :foreground ,bg0))))
+                          `(ml-git-none-face ((t (:background ,red :foreground ,bg0))))
+
+                          `(ml-buffer-face ((t (:foreground ,fg))))
+                          `(ml-buffer-modified-face ((t (:foreground ,fg :slant italic))))
+                          `(ml-readonly-face ((t (:background ,red :foreground ,bg0))))
+
+
+                          `(ml-flycheck-default-face ((t (:foreground ,fg))))
+                          `(ml-flycheck-error-face ((t (:background ,red :foreground ,bg0))))
+                          `(ml-flycheck-warning-face ((t (:background ,orange :foreground ,bg0))))
+
+                          `(ml-envrc-face ((t (:foreground ,bg2))))
+
+
+                          `(ml-word-count-face ((t (:foreground ,fg))))
+                          `(ml-major-mode-face ((t (:background ,blue :foreground ,bg0))))
+                          `(ml-time-face ((t (:foreground ,fg))))
                           ))
 
 ;;;###autoload
