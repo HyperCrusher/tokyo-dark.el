@@ -279,7 +279,7 @@
                           `(ml-git-none-face ((t (:background ,red :foreground ,bg0))))
 
                           `(ml-buffer-face ((t (:foreground ,fg))))
-                          `(ml-buffer-modified-face ((t (:foreground ,fg :slant italic))))
+                          `(ml-buffer-modified-face ((t (:foreground ,fg :weight bold :slant italic))))
                           `(ml-readonly-face ((t (:background ,red :foreground ,bg0))))
 
 
