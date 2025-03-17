@@ -283,9 +283,9 @@
                           `(ml-readonly-face ((t (:background ,red :foreground ,bg0))))
 
 
-                          `(ml-flycheck-default-face ((t (:foreground ,fg))))
-                          `(ml-flycheck-error-face ((t (:background ,red :foreground ,bg0))))
-                          `(ml-flycheck-warning-face ((t (:background ,orange :foreground ,bg0))))
+                          `(ml-flycheck-default-face ((t (:foreground ,bg2 :slant italic))))
+                          `(ml-flycheck-error-face ((t (:foreground ,red))))
+                          `(ml-flycheck-warning-face ((t (:foreground ,orange))))
 
                           `(ml-envrc-face ((t (:foreground ,bg2))))
 
