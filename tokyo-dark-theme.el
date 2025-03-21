@@ -289,10 +289,20 @@
 
                           `(ml-envrc-face ((t (:foreground ,bg2))))
 
-
                           `(ml-word-count-face ((t (:foreground ,fg))))
                           `(ml-major-mode-face ((t (:background ,blue :foreground ,bg0))))
                           `(ml-time-face ((t (:foreground ,fg))))
+
+                          ;; Flycheck-posframe
+                          `(flycheck-posframe-border-face ((t (:foreground ,bg3))))
+                          `(flycheck-posframe-warning-face ((t (:foreground ,orange))))
+                          `(flycheck-posframe-error-face ((t (:foreground ,red))))
+                          `(flycheck-posframe-warning-face ((t (:foreground ,search))))
+
+                          ;; Flycheck underlines
+                          `(flycheck-error ((t (:underline (:style line :color ,red)))))
+                          `(flycheck-warning ((t (:underline (:style line :color ,orange)))))
+                          `(flycheck-info ((t (:underline (:style line :color ,blue)))))
                           ))
 
 ;;;###autoload
