@@ -10,6 +10,11 @@
   :group 'tokyo-dark
   :type 'boolean)
 
+(defcustom tokyo-dark-darker-background nil
+  "If non-nil, background to editing windows darker"
+  :group 'tokyo-dark
+  :type 'boolean)
+
 (defcustom tokyo-dark-transparency 97
   "If 'tokyo-dark-transparent-background' is non nil then this number (1-100) is how opaque the window is (may require restart)"
   :group 'tokyo-dark
@@ -146,7 +151,7 @@
                           `(evil-quickscope-first-face ((t (:foreground ,orange :background ,bg3))))
                           `(evil-quickscope-second-face ((t (:foreground ,orange :background ,bg3))))
 
-                           ;; ansi-color (emacs >= 28.1)
+                          ;; ansi-color (emacs >= 28.1)
                           `(ansi-color-black ((t (:foreground ,black))))
                           `(ansi-color-red ((t (:foreground ,red))))
                           `(ansi-color-yellow ((t (:foreground ,orange))))
@@ -197,7 +202,7 @@
                           `(tree-sitter-hl-face:variable.parameter ((t (:foreground ,red))))
                           `(tree-sitter-hl-face:operator ((t (:foreground ,light-blue))))
 
-                          ; Rainbow delimiters
+                                        ; Rainbow delimiters
                           `(rainbow-delimiters-depth-1-face ((t (:foreground ,blue))))
                           `(rainbow-delimiters-depth-2-face ((t (:foreground ,red))))
                           `(rainbow-delimiters-depth-3-face ((t (:foreground ,orange))))
@@ -207,18 +212,18 @@
                           `(rainbow-delimiters-depth-7-face ((t (:foreground ,gray))))
                           `(rainbow-delimiters-depth-8-face ((t (:foreground ,fg))))
 
-                          ; Corfu
+                                        ; Corfu
                           `(corfu-bar ((t (:background ,purple))))
                           `(corfu-default ((t (:background ,bg0 :foreground ,fg))))
                           `(corfu-border ((t (:background ,fg-mute))))
                           `(corfu-current ((t (:background ,bg3))))
 
-                          ; Git-Gutter
+                                        ; Git-Gutter
                           `(git-gutter:modified ((t (:foreground ,purple))))
                           `(git-gutter:added ((t (:foreground ,green))))
                           `(git-gutter:deleted ((t (:foreground ,red))))
 
-                          ; Diff
+                                        ; Diff
                           `(diff-header ((t (:foreground ,blue))))
                           `(diff-hunk-header ((t (:foreground ,fg :background ,bg2))))
                           `(diff-added ((t (:background ,bg2 :foreground ,green))))
@@ -229,7 +234,7 @@
                           `(diff-refine-removed ((t (:background ,bg3 :foreground ,red))))
                           `(diff-refine-changed ((t (:background ,orange :foreground ,bg0))))
 
-                          ; Magit
+                                        ; Magit
                           `(magit-branch-local ((t (:foreground ,light-blue))))
                           `(magit-branch-remote ((t (:foreground ,green))))
                           `(magit-tag ((t (:foreground ,orange))))
@@ -274,7 +279,7 @@
                           `(org-modern-time-inactive ((t (:background ,fg :foreground ,bg0))))
                           `(org-modern-horizontal-rule ((t (:strike-through ,purple))))
 
-                          ; My Modeline faces
+                                        ; My Modeline faces
                           `(ml-git-face ((t (:background ,purple :foreground ,bg0))))
                           `(ml-git-none-face ((t (:background ,red :foreground ,bg0))))
 
@@ -312,11 +317,11 @@
                (file-name-as-directory
                 (file-name-directory load-file-name))))
 
-  ;; Sets executable files to be green in dired/dirvish
-  (add-to-list
-   'dired-font-lock-keywords
-   (list dired-re-exe
-         '(".+" (dired-move-to-filename) nil (0 'dired-perm-write)))
-   'append)
+;; Sets executable files to be green in dired/dirvish
+(add-to-list
+ 'dired-font-lock-keywords
+ (list dired-re-exe
+       '(".+" (dired-move-to-filename) nil (0 'dired-perm-write)))
+ 'append)
 
 (provide-theme 'tokyo-dark)
