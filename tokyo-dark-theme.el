@@ -202,7 +202,7 @@
                           `(tree-sitter-hl-face:variable.parameter ((t (:foreground ,red))))
                           `(tree-sitter-hl-face:operator ((t (:foreground ,light-blue))))
 
-                                        ; Rainbow delimiters
+                          ;; Rainbow delimiters
                           `(rainbow-delimiters-depth-1-face ((t (:foreground ,blue))))
                           `(rainbow-delimiters-depth-2-face ((t (:foreground ,red))))
                           `(rainbow-delimiters-depth-3-face ((t (:foreground ,orange))))
@@ -212,18 +212,18 @@
                           `(rainbow-delimiters-depth-7-face ((t (:foreground ,gray))))
                           `(rainbow-delimiters-depth-8-face ((t (:foreground ,fg))))
 
-                                        ; Corfu
+                          ;; Corfu
                           `(corfu-bar ((t (:background ,purple))))
                           `(corfu-default ((t (:background ,bg0 :foreground ,fg))))
                           `(corfu-border ((t (:background ,fg-mute))))
                           `(corfu-current ((t (:background ,bg3))))
 
-                                        ; Git-Gutter
+                          ;; Git-Gutter
                           `(git-gutter:modified ((t (:foreground ,purple))))
                           `(git-gutter:added ((t (:foreground ,green))))
                           `(git-gutter:deleted ((t (:foreground ,red))))
 
-                                        ; Diff
+                          ;; Diff
                           `(diff-header ((t (:foreground ,blue))))
                           `(diff-hunk-header ((t (:foreground ,fg :background ,bg2))))
                           `(diff-added ((t (:background ,bg2 :foreground ,green))))
@@ -234,7 +234,7 @@
                           `(diff-refine-removed ((t (:background ,bg3 :foreground ,red))))
                           `(diff-refine-changed ((t (:background ,orange :foreground ,bg0))))
 
-                                        ; Magit
+                          ;; Magit
                           `(magit-branch-local ((t (:foreground ,light-blue))))
                           `(magit-branch-remote ((t (:foreground ,green))))
                           `(magit-tag ((t (:foreground ,orange))))
@@ -279,7 +279,7 @@
                           `(org-modern-time-inactive ((t (:background ,fg :foreground ,bg0))))
                           `(org-modern-horizontal-rule ((t (:strike-through ,purple))))
 
-                                        ; My Modeline faces
+                          ;; My Modeline faces
                           `(ml-git-face ((t (:background ,purple :foreground ,bg0))))
                           `(ml-git-none-face ((t (:background ,red :foreground ,bg0))))
 
