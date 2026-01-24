@@ -173,6 +173,13 @@
                           `(completions-common-part ((t (:foreground ,fg :weight bold))))
                           `(completions-first-difference ((t (:foreground ,fg))))
 
+                          ;; Lsp-Bridge
+                          `(lsp-bridge-inlay-hint-face ((t (:inherit font-lock-comment-face))))
+                          `(lsp-bridge-document-highlight-face ((t (:inherit lazy-highlight))))
+                          `(lsp-bridge-diagnostic-error-face ((t (:underline (:style line :color ,red)))))
+                          `(lsp-bridge-diagnostic-warning-face ((t (:underline (:style line :color ,orange)))))
+                          `(lsp-bridge-diagnostic-hint-face ((t (:underline (:style line :color ,blue)))))
+
                           ;;Vertico
                           `(vertico-current ((t (:foreground ,fg :background ,bg2))))
 
