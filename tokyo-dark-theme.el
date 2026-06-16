@@ -303,6 +303,7 @@
 
                           `(ml-word-count-face ((t (:foreground ,fg))))
                           `(ml-major-mode-face ((t (:background ,blue :foreground ,bg0))))
+                          `(ml-gptel-face ((t (:background ,orange :foreground ,bg0))))
                           `(ml-time-face ((t (:foreground ,fg))))
 
                           ;; Flycheck-posframe
